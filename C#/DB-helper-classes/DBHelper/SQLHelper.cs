@@ -18,7 +18,7 @@ namespace DBHelper
 
         SqlConnection GetConnection()
         {
-            return GetConnection();
+            return new SqlConnection { ConnectionString = _connectionString };;
         }
 
         SqlCommand GetCommand(SqlConnection connection, string commandText, CommandType commandType)
